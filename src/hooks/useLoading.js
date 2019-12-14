@@ -4,6 +4,7 @@ export function Loading(props) {
   return (
     <div>
       <p>Loading...</p>
+      <div className="spinner" />
     </div>
   );
 }
