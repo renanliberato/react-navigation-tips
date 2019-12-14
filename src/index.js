@@ -10,7 +10,7 @@ import { UserDetail } from "./screens/UserDetail";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="container">
         <Route path="/" exact component={Home} />
         <Route exact path="/users/" component={UsersList} />
         <Route path="/users/:name" component={UserDetail} />

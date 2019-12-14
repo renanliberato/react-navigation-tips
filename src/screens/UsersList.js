@@ -12,18 +12,6 @@ const externalUsers = [
   { name: "José", redirectTo: "/users/José" }
 ];
 
-export function UsersSimpleList(props) {
-  return (
-    <ul>
-      {props.users.map(user => (
-        <li key={user.name}>
-          <Link to={`/users/${user.name}`}>{user.name}</Link>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 var usersCache = [];
 
 export function UsersList(props) {
