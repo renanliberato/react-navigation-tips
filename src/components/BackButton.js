@@ -6,5 +6,13 @@ export function BackButton(props) {
       ? () => props.history.goBack()
       : () => props.history.replace(props.redirectTo);
 
-  return <button onClick={navigateAction}>Back</button>;
+  return (
+    <button
+      className="btn btn-default"
+      style={{ marginBottom: 10 }}
+      onClick={navigateAction}
+    >
+      Back
+    </button>
+  );
 }
